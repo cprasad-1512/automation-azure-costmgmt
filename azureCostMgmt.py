@@ -9,7 +9,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import date, timedelta
 
-class MyUsage:
+class AzureUsage:
 
 
     ######################### Getting the login OAuth Token #################################################
@@ -169,8 +169,8 @@ class MyUsage:
         
 
 
-def run_example():
-    azure_usage = MyUsage()
+def run_script():
+    azure_usage = AzureUsage()
     usageResult = azure_usage.run("2021-09-27", "2021-09-28")
     usageResult = azure_usage.run(
         convertToStrpday, convertToStrtday, groupby="ResourceGroup")
