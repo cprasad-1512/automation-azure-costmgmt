@@ -150,7 +150,7 @@ class AzureUsage:
         message.attach(MIMEText(body_content,"html"))
         msg_body = message.as_string()
 
-        smtpObj = smtplib.SMTP('yourcompany.com',25)
+        smtpObj = smtplib.SMTP('yourcompany.mail.protection.outlook.com',25)
         smtpObj.sendmail(sender, receivers, msg_body)
 
 
@@ -171,7 +171,7 @@ class AzureUsage:
 
 def run_script():
     azure_usage = AzureUsage()
-    usageResult = azure_usage.run("2021-09-27", "2021-09-28")
+    # usageResult = azure_usage.run("2021-09-27", "2021-09-28")
     usageResult = azure_usage.run(
         convertToStrpday, convertToStrtday, groupby="ResourceGroup")
     print(*usageResult, sep="\n")
