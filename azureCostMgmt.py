@@ -79,7 +79,7 @@ class AzureUsage:
 
         return self.usagedata
 
-    ######################## Tranforming the response to a data set #####################################
+    ######################## Tranforming the response based on cost properties #####################################
 
     def transform(self, payloadjson, response):
         result = json.loads(response)
