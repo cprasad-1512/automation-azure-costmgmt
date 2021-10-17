@@ -187,5 +187,7 @@ convertToStrtday=today.strftime("%Y-%m-%d")
 convertToStrpday=previuosDate.strftime("%Y-%m-%d")
 
 
+################## Main function ########################
+
 if __name__ == "__main__":
     run_example()

@@ -4,8 +4,8 @@ A Python script (Runbook) for getting the daily cost of azure resources in subsc
 
 ## Prerequiste
 
-- Python 3.7+
-- Azure Account
+- [Python](https://www.python.org/downloads/) 3.7+
+- [Azure](https://portal.azure.com/#home) Account
 - Any code editor. (Preferable: [VS Code](https://code.visualstudio.com/download))
 
 ## Python packages
